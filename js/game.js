@@ -69,6 +69,15 @@ var optimizeData = {balls:100};//Modificado por Rodolfo para optimizar el juego 
 var cardData = {max:36, page:1, maxPage:0};
 var ballData = {radius:60, scale:1};
 
+// Store number to display on the array
+
+function storeNumber() {
+	const input = document.getElementById('numberInput');
+	const number = input.valueAsNumber;
+	gameData.revealArray.push(number);
+	console.log('Numbers:', gameData.revealArray);
+}
+
 /*!
  * 
  * GAME BUTTONS - This is the function that runs to setup button event
@@ -95,6 +104,7 @@ function buildGameButton(){
 	buttonStart.addEventListener("click", function(evt) {
 		playSound('soundClick');
 		goPage('game');
+		storeNumber();
 	});
 	
 	buttonContinue.cursor = "pointer";
@@ -312,7 +322,7 @@ function startGame(){
 	console.log(gameData.revealArray.length);
 }
 
-gameData.revealArray = [55];
+gameData.revealArray = [];
 
 	itemBarUser.visible = false;
 	buttonSphereStart.visible = true;// modificar para que no se vea el boton de girar
