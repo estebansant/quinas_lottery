@@ -76,6 +76,7 @@ function storeNumber() {
 	const number = input.valueAsNumber;
 	gameData.revealArray.push(number);
 	console.log('Numbers:', gameData.revealArray);
+	document.getElementById("myDIV").style.display = "none";
 }
 
 /*!
