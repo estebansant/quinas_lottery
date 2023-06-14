@@ -72,12 +72,12 @@ var ballData = {radius:60, scale:1};
 // Store number to display on the array
 
 function storeNumber() {
+	document.getElementById("inputContainer").style.display = "none";
+	document.getElementById("inputLabel").style.display = "none";
 	const input = document.getElementById('numberInput');
 	const number = input.valueAsNumber;
 	gameData.revealArray.push(number);
 	console.log('Numbers:', gameData.revealArray);
-	document.getElementById("inputContainer").style.display = "none";
-	document.getElementById("inputLabel").style.display = "none";
 	document.getElementById("numberInput").style.display = "none";
 }
 
