@@ -496,7 +496,7 @@ canvas {
 .input__field::placeholder {
   font-family: quantifybold, sans-serif;
   font-size: 16px;
-  color: #948990;
+  color: #6f696d;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
