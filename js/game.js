@@ -77,6 +77,8 @@ function storeNumber() {
 	gameData.revealArray.push(number);
 	console.log('Numbers:', gameData.revealArray);
 	document.getElementById("inputContainer").style.display = "none";
+	document.getElementById("inputLabel").style.display = "none";
+	document.getElementById("numberInput").style.display = "none";
 }
 
 /*!
